@@ -1,0 +1,34 @@
+{
+  "name": "cardbinrd",
+  "version": "1.0.0",
+  "description": "CardBinRD es una librería de JavaScript diseñada para gestionar y verificar datos BIN/IIN de tarjetas de crédito emitidas en la República Dominicana. Esta librería proporciona una serie de herramientas y utilidades que permiten a los desarrolladores obtener información detallada sobre las tarjetas de crédito",
+  "main": "./dist/cardBinRD.min.js",
+  "scripts": {
+    "build": "terser src/cardBinRD.js --compress --mangle --output dist/cardBinRD.min.js && terser src/DataBIN.js --compress --mangle --output dist/DataBIN.min.js",
+    "test": "mocha test/*",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlsRemy/CardBinRD.git"
+  },
+  "keywords": [
+    "creditcard",
+    "BIN/INN",
+    "cardIssuer",
+    "Tarjeta de crédito",
+    "BIN RD",
+    "Republica Dominicana"
+  ],
+  "author": "Carlos I. Ynfante R.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CarlsRemy/CardBinRD/issues"
+  },
+  "homepage": "https://github.com/CarlsRemy/CardBinRD#readme",
+  "devDependencies": {
+    "chai": "4.3.8",
+    "mocha": "^10.4.0",
+    "terser": "^5.31.0"
+  }
+}
